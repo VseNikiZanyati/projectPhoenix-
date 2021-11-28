@@ -43,7 +43,7 @@ const Content = () => {
       )}
       <ReactPaginate
         previousLabel={"<"}
-        nextLabel={"<"}
+        nextLabel={">"}
         pageCount={pageCount}
         onPageChange={changePage}
         containerClassName="pagination"

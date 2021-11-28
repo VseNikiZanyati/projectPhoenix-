@@ -62,7 +62,7 @@ const ProductCard = ({ product, cart }) => {
               Цена: {product.price} сом
             </Typography>
             <Typography variant="subtitle1" color="textPrimary" component="p">
-              Память: {product.category} гб
+              Размер: {product.size} 
             </Typography>
             <Typography variant="subtitle1" color="textPrimary" component="p">
               В наличии: {product.countInStock} шт

@@ -43,17 +43,15 @@ const Sidebar = () => {
       >
         <Grid>
           <FormControl component="fieldset">
-            <FormLabel component="label">Memory</FormLabel>
+            <FormLabel component="label">Size</FormLabel>
             <RadioGroup
-              aria-label="memory"
-              name="memory1"
-              onChange={(e) => fetchByParams("category", e.target.value)}
+              aria-label="size"
+              name="size1"
+              onChange={(e) => fetchByParams("size", e.target.value)}
             >
-              <FormControlLabel value="64" control={<Radio />} label="64" />
-              <FormControlLabel value="128" control={<Radio />} label="128" />
-              <FormControlLabel value="256" control={<Radio />} label="256" />
-              <FormControlLabel value="512" control={<Radio />} label="512" />
-              <FormControlLabel value="1024" control={<Radio />} label="1024" />
+              <FormControlLabel value="S" control={<Radio />} label="S" />
+              <FormControlLabel value="M" control={<Radio />} label="M" />
+              <FormControlLabel value="XL" control={<Radio />} label="XL" />
               <FormControlLabel value="all" control={<Radio />} label="All" />
             </RadioGroup>
           </FormControl>

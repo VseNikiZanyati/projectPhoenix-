@@ -12,9 +12,6 @@ const AddProduct = () => {
     image: "",
     price: "",
     description: "",
-    category: "",
-    author: "",
-    phone: "",
     countInStock: "",
   });
   const navigate = useNavigate();
@@ -27,15 +24,13 @@ const AddProduct = () => {
     setForm(values);
   };
 
-  const addPhone = async () => {
+  const addClothes = async () => {
     if (
       !form.title ||
       !form.image ||
       !form.price ||
       !form.description ||
-      !form.category ||
-      !form.author ||
-      !form.phone ||
+     
       !form.countInStock
     ) {
       alert("fill all blanks");
@@ -47,7 +42,7 @@ const AddProduct = () => {
   //   console.log(form);
   return (
     <>
-      <h1>Add new smartphone</h1>
+      <h1>Add new clothes</h1>
       <Grid container className="main">
         <Grid item md={5}>
           <Paper elevation={5} className="paper">
@@ -80,27 +75,7 @@ const AddProduct = () => {
                 onChange={handleChange}
                 value={form.price}
               />
-              <input
-                type="text"
-                placeholder="Category"
-                name="category"
-                onChange={handleChange}
-                value={form.category}
-              />
-              <input
-                type="text"
-                placeholder="Author"
-                name="author"
-                onChange={handleChange}
-                value={form.author}
-              />
-              <input
-                type="text"
-                placeholder="Phone"
-                name="phone"
-                onChange={handleChange}
-                value={form.phone}
-              />
+               
               <input
                 type="text"
                 placeholder="Count in stock"
@@ -110,7 +85,7 @@ const AddProduct = () => {
               />
             </form>
             <Button
-              onClick={addPhone}
+              onClick={addClothes}
               variant="contained"
               color="secondary"
               className="btn-add"

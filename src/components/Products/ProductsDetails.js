@@ -41,6 +41,7 @@ const ProductsDetails = () => {
     deleteProduct(id);
     navigate("/");
   };
+  
   const classes = useStyles();
   return (
     <Grid container>
@@ -94,25 +95,6 @@ const ProductsDetails = () => {
                     </tr>
                   ) : null}
                   <br />
-                  <tr>
-                    <th> Author:</th>
-                    <td>{productDetails.author} </td>
-                  </tr>
-                  <br />
-                  <tr>
-                    <th> Count in Stock:</th>
-                    <td>{productDetails.countInStock}</td>
-                  </tr>
-                  <br />
-                  <tr>
-                    <th> Category:</th>
-                    <td>{productDetails.category}</td>
-                  </tr>
-                  <br />
-                  <tr>
-                    <th> Phone:</th>
-                    <td>{productDetails.phone}</td>
-                  </tr>
                 </tbody>
               </table>
             </Paper>
@@ -133,3 +115,4 @@ const ProductsDetails = () => {
 };
 
 export default ProductsDetails;
+
